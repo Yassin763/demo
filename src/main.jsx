@@ -8,7 +8,7 @@ import '@popperjs/core/dist/umd/popper.min.js'
 import { BrowserRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/demo">
       <App />
     </BrowserRouter>
   </StrictMode>,
