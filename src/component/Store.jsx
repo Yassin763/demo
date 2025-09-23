@@ -27,7 +27,7 @@ function Store() {
 
                                 <div className="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex flex-wrap " key={item.id}>
                                     <div className="card" style={{ width: "23rem" }}>
-                                        <img src={item.imgUrl} className="card-img-top" style={{ width: "100%", height: "20rem", objectFit: 'cover' }} alt="..." />
+                                        <img src={item.imgUrl} className="card-img-top" style={{ width: "100%", height: "20rem", objectFit: 'cover' }} alt={item.imgUrl} />
                                         <div className="card-body">
                                             <div className="card-title d-flex justify-content-between align-items-center">
                                                 <span className="fs-2 ">{item.name}</span>
@@ -60,4 +60,5 @@ function Store() {
 
 
 export default Store;
+
 
