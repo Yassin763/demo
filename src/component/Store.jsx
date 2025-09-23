@@ -5,7 +5,7 @@ import formatCurrency from "./formatCurrency";
 function Store() {
     const [items, Setitems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:1911/items')
+        fetch('https://my-json-server.typicode.com/Yassin763/repo/items')
             .then(res => res.json())
             .then(body => Setitems(body))
     }, [])
@@ -57,5 +57,6 @@ function Store() {
         </>
     );
 }
+
 
 export default Store;
